@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+/*
+  ORIA — Sistema de color con dos rutas alternables (ver Biblia de Marca).
+  El toggle de tema (src/components/ThemeToggle.jsx) escribe data-theme
+  en <html>. Ruta A es la paleta por defecto.
+*/
+:root,
+[data-theme="a"] {
+  --color-primary: #123b5d; /* Azul petróleo — liderazgo, tecnología */
+  --color-secondary: #2b3137; /* Grafito — precisión, seriedad */
+  --color-accent: #b8742a; /* Cobre — progreso, diferenciación */
+  --color-neutral: #f7f7f5; /* Blanco cálido — claridad, orden */
+  /* El cobre es oscuro: texto claro encima mantiene contraste. */
+  --color-on-accent: var(--color-neutral);
+}
+
+[data-theme="b"] {
+  --color-primary: #1f5b49; /* Verde bosque — crecimiento, confianza */
+  --color-secondary: #25282b; /* Carbón — estructura */
+  --color-accent: #d8ccba; /* Arena — cercanía, humanidad */
+  --color-neutral: #faf8f3; /* Marfil — limpieza */
+  /* La arena es clara: necesita texto oscuro encima para contraste. */
+  --color-on-accent: var(--color-secondary);
+}
+
+@theme inline {
+  --color-primary: var(--color-primary);
+  --color-secondary: var(--color-secondary);
+  --color-accent: var(--color-accent);
+  --color-neutral: var(--color-neutral);
+  --color-on-accent: var(--color-on-accent);
+
+  --font-heading: "Manrope", system-ui, sans-serif;
+  --font-body: "Inter", system-ui, sans-serif;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--color-neutral);
+  color: var(--color-secondary);
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-heading);
+}
+
+@keyframes route-flow {
+  to {
+    stroke-dashoffset: -32;
+  }
+}
+
+.animate-route-flow {
+  animation: route-flow 1.6s linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-route-flow {
+    animation: none;
+  }
+}
