@@ -3,7 +3,7 @@ import PlatformMockup from './PlatformMockup'
 
 export default function Hero() {
   return (
-    <section className="relative overflow-hidden bg-primary px-6 py-20 sm:py-28">
+    <section className="bg-hero-radial relative overflow-hidden px-6 py-20 sm:py-28">
       <AbstractRoute className="pointer-events-none absolute inset-0 h-full w-full opacity-[0.12]" />
 
       <div className="relative mx-auto grid max-w-6xl items-center gap-14 lg:grid-cols-[1fr_1.05fr] lg:gap-10">
@@ -20,7 +20,7 @@ export default function Hero() {
           </p>
           <a
             href="#cta-final"
-            className="mt-10 inline-block rounded-full bg-accent px-8 py-4 text-base font-semibold text-on-accent transition hover:brightness-110"
+            className="btn-shimmer bg-gradient-accent mt-10 inline-block rounded-full px-8 py-4 text-base font-semibold text-on-accent"
           >
             Comienza hoy
           </a>

@@ -2,7 +2,7 @@ export default function Footer() {
   return (
     <footer className="bg-primary px-6 py-10 text-center">
       <div className="mx-auto flex max-w-5xl flex-col items-center gap-3">
-        <img src="/logo-oria.png" alt="ORIA Envíos" className="h-7 w-auto" />
+        <img src="/logo-oria-light.png" alt="ORIA Envíos" className="h-7 w-auto" />
         <p className="text-sm text-neutral/60">
           Conectamos oportunidades, entregamos crecimiento.
         </p>

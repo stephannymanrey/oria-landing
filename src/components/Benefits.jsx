@@ -14,8 +14,10 @@ const BENEFITS = [
 
 function BenefitCard({ text, Icon }) {
   return (
-    <li className="flex items-start gap-4 rounded-xl border border-secondary/10 bg-neutral p-5 shadow-[0_1px_3px_rgba(0,0,0,0.06)] transition hover:border-primary/30 hover:shadow-[0_4px_12px_rgba(0,0,0,0.08)]">
-      <Icon className="mt-0.5 h-5 w-5 shrink-0 text-primary" />
+    <li className="card-glow-hover flex items-start gap-4 rounded-xl border border-secondary/10 bg-neutral p-5 shadow-[0_1px_3px_rgba(0,0,0,0.06)]">
+      <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-gradient-accent">
+        <Icon className="h-4.5 w-4.5 text-on-accent" />
+      </span>
       <span className="text-base text-secondary/80">{text}</span>
     </li>
   )

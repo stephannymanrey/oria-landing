@@ -42,15 +42,17 @@ export default function Solution() {
         </p>
 
         <div className="relative mt-14">
-          <div className="absolute left-[12.5%] right-[12.5%] top-12 hidden h-px bg-accent/30 lg:block" />
+          <div className="absolute left-[12.5%] right-[12.5%] top-12 hidden h-0.5 bg-accent/60 lg:block" />
 
           <div className="relative grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {MOMENTS.map((moment) => (
               <div
                 key={moment.label}
-                className="flex flex-col items-center rounded-xl border border-neutral/10 bg-neutral/5 px-5 pb-6 pt-8 text-center transition hover:border-accent/40 hover:bg-neutral/[0.08]"
+                className="card-glow-hover flex flex-col items-center rounded-xl border border-primary/40 bg-primary/60 px-5 pb-6 pt-8 text-center backdrop-blur-sm"
               >
-                <moment.Icon className="h-8 w-8 shrink-0 text-accent" />
+                <span className="icon-glow flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-accent/15">
+                  <moment.Icon className="h-7 w-7 text-accent" />
+                </span>
                 <h3 className="mt-4 text-base font-semibold text-neutral">
                   {moment.label}
                 </h3>
