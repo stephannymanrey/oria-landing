@@ -1,27 +1,16 @@
 @import "tailwindcss";
 
 /*
-  ORIA — Sistema de color con dos rutas alternables (ver Biblia de Marca).
-  El toggle de tema (src/components/ThemeToggle.jsx) escribe data-theme
-  en <html>. Ruta A es la paleta por defecto.
+  ORIA — Paleta oficial aprobada por el cliente (ORIA Envíos).
+  Primario = ORIA Navy, Secundario = ORIA Teal, Acento = ORIA Aqua.
 */
-:root,
-[data-theme="a"] {
-  --color-primary: #123b5d; /* Azul petróleo — liderazgo, tecnología */
-  --color-secondary: #2b3137; /* Grafito — precisión, seriedad */
-  --color-accent: #b8742a; /* Cobre — progreso, diferenciación */
-  --color-neutral: #f7f7f5; /* Blanco cálido — claridad, orden */
-  /* El cobre es oscuro: texto claro encima mantiene contraste. */
-  --color-on-accent: var(--color-neutral);
-}
-
-[data-theme="b"] {
-  --color-primary: #1f5b49; /* Verde bosque — crecimiento, confianza */
-  --color-secondary: #25282b; /* Carbón — estructura */
-  --color-accent: #d8ccba; /* Arena — cercanía, humanidad */
-  --color-neutral: #faf8f3; /* Marfil — limpieza */
-  /* La arena es clara: necesita texto oscuro encima para contraste. */
-  --color-on-accent: var(--color-secondary);
+:root {
+  --color-primary: #0d1d2f; /* ORIA Navy — fondos oscuros, liderazgo */
+  --color-secondary: #128286; /* ORIA Teal — estructura, secciones de apoyo */
+  --color-accent: #2cbec3; /* ORIA Aqua — botones, íconos, acento de marca */
+  --color-neutral: #e3edee; /* Gris muy claro — fondos claros, texto sobre oscuro */
+  /* El aqua es claro/brillante: texto oscuro (navy) encima mantiene contraste. */
+  --color-on-accent: var(--color-primary);
 }
 
 @theme inline {

@@ -1,7 +1,6 @@
 import Landing from './pages/Landing'
 import Header from './components/Header'
 import Footer from './components/Footer'
-import ThemeToggle from './components/ThemeToggle'
 import WhatsAppButton from './components/WhatsAppButton'
 
 function App() {
@@ -16,7 +15,6 @@ function App() {
       <Header />
       <Landing />
       <Footer />
-      <ThemeToggle />
       <WhatsAppButton />
     </div>
   )
