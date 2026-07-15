@@ -1,17 +1,16 @@
-// TODO: reemplazar con el número de WhatsApp del asesor comercial de ORIA,
-// en formato internacional sin "+" ni espacios (ej. "5215512345678").
-// Mientras esté vacío, el botón queda inactivo (href="#").
-const WHATSAPP_NUMBER = ''
-const WHATSAPP_URL = WHATSAPP_NUMBER
-  ? `https://wa.me/${WHATSAPP_NUMBER}`
-  : '#'
+// Número del asesor comercial de ORIA. Nota: para wa.me los números
+// mexicanos NO llevan el "1" que sí se usa para marcar desde el
+// extranjero (+52 1 221 414 5086 -> 522214145086).
+const WHATSAPP_NUMBER = '522214145086'
+const WHATSAPP_MESSAGE = 'Hola, quiero saber más sobre ORIA y cómo puede ayudar a mi negocio.'
+const WHATSAPP_URL = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(WHATSAPP_MESSAGE)}`
 
 export default function WhatsAppButton() {
   return (
     <a
       href={WHATSAPP_URL}
-      target={WHATSAPP_NUMBER ? '_blank' : undefined}
-      rel={WHATSAPP_NUMBER ? 'noreferrer' : undefined}
+      target="_blank"
+      rel="noreferrer"
       aria-label="Chatea con ORIA por WhatsApp"
       className="relative flex h-14 w-14 items-center justify-center rounded-full bg-[#25D366] shadow-lg transition hover:brightness-105"
     >
