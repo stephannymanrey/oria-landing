@@ -1,8 +1,5 @@
 import Reveal from './Reveal'
-
-// TODO: reemplazar con el dominio de la plataforma anterior de De Volada App
-// en cuanto el cliente lo comparta.
-const PREVIOUS_PLATFORM_URL = '#'
+import { getWhatsAppUrl } from '../lib/whatsapp'
 
 export default function FinalCta() {
   return (
@@ -11,8 +8,13 @@ export default function FinalCta() {
         <h2 className="text-3xl font-bold text-neutral sm:text-4xl">
           Tu logística ya no tiene que ser un obstáculo para crecer.
         </h2>
+        <p className="mt-4 text-neutral/70">
+          Cuéntanos cómo vendes hoy y te decimos cómo simplificarlo.
+        </p>
         <a
-          href={PREVIOUS_PLATFORM_URL}
+          href={getWhatsAppUrl()}
+          target="_blank"
+          rel="noreferrer"
           className="btn-shimmer bg-gradient-accent mt-10 inline-block rounded-full px-8 py-4 text-base font-semibold text-on-accent"
         >
           Comienza hoy
