@@ -1,3 +1,4 @@
+import CotizadorEmbed from '../components/CotizadorEmbed'
 import Hero from '../components/Hero'
 import Problem from '../components/Problem'
 import Solution from '../components/Solution'
@@ -9,6 +10,7 @@ import FinalCta from '../components/FinalCta'
 export default function Landing() {
   return (
     <main id="main-content">
+      <CotizadorEmbed />
       <Hero />
       <Problem />
       <Solution />
