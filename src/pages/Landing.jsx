@@ -5,6 +5,7 @@ import Solution from '../components/Solution'
 import ManifestoQuote from '../components/ManifestoQuote'
 import Benefits from '../components/Benefits'
 import ServicePromise from '../components/ServicePromise'
+import Faq from '../components/Faq'
 import FinalCta from '../components/FinalCta'
 
 export default function Landing() {
@@ -17,6 +18,7 @@ export default function Landing() {
       <Benefits />
       <ServicePromise />
       <CotizadorEmbed />
+      <Faq />
       <FinalCta />
     </main>
   )

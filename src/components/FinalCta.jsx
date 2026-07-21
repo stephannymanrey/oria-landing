@@ -19,6 +19,9 @@ export default function FinalCta() {
         >
           Comienza hoy
         </a>
+        <p className="mt-3 text-xs text-neutral/50">
+          Te llevamos a la plataforma ORIA para comenzar.
+        </p>
       </Reveal>
     </section>
   )
