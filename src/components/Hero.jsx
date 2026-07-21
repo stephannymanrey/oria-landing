@@ -1,6 +1,6 @@
 import AbstractRoute from './AbstractRoute'
 import PlatformMockup from './PlatformMockup'
-import { getWhatsAppUrl } from '../lib/whatsapp'
+import { PLATFORM_URL } from '../lib/platform'
 
 export default function Hero() {
   return (
@@ -20,7 +20,7 @@ export default function Hero() {
             hacer crecer tu negocio.
           </p>
           <a
-            href={getWhatsAppUrl()}
+            href={PLATFORM_URL}
             target="_blank"
             rel="noreferrer"
             className="btn-shimmer bg-gradient-accent mt-10 inline-block rounded-full px-8 py-4 text-base font-semibold text-on-accent"

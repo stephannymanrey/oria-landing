@@ -1,5 +1,5 @@
 import Reveal from './Reveal'
-import { getWhatsAppUrl } from '../lib/whatsapp'
+import { PLATFORM_URL } from '../lib/platform'
 
 export default function FinalCta() {
   return (
@@ -12,7 +12,7 @@ export default function FinalCta() {
           Cuéntanos cómo vendes hoy y te decimos cómo simplificarlo.
         </p>
         <a
-          href={getWhatsAppUrl()}
+          href={PLATFORM_URL}
           target="_blank"
           rel="noreferrer"
           className="btn-shimmer bg-gradient-accent mt-10 inline-block rounded-full px-8 py-4 text-base font-semibold text-on-accent"
