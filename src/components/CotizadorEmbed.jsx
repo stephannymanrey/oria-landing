@@ -20,7 +20,7 @@ export default function CotizadorEmbed() {
           <iframe
             src="https://panel.oriaenvios.com/#/cotizador"
             title="Cotizador ORIA"
-            className="h-[600px] w-full bg-neutral sm:h-[800px]"
+            className="h-[720px] w-full bg-neutral sm:h-[580px]"
             style={{ border: 0 }}
             allowFullScreen
           />

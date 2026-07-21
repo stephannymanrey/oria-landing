@@ -10,8 +10,8 @@ import FinalCta from '../components/FinalCta'
 export default function Landing() {
   return (
     <main id="main-content">
-      <CotizadorEmbed />
       <Hero />
+      <CotizadorEmbed />
       <Problem />
       <Solution />
       <ManifestoQuote />
