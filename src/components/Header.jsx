@@ -11,10 +11,10 @@ export default function Header() {
           />
         </a>
         <a
-          href="#cta-final"
+          href="#cotizador"
           className="btn-shimmer bg-gradient-accent rounded-full px-5 py-2 text-sm font-semibold text-on-accent"
         >
-          Comienza hoy
+          Realiza tu cotización
         </a>
       </div>
     </header>

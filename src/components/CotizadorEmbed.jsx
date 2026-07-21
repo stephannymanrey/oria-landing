@@ -1,6 +1,6 @@
 export default function CotizadorEmbed() {
   return (
-    <section className="bg-neutral px-6 py-12 sm:py-16">
+    <section id="cotizador" className="scroll-mt-24 bg-neutral px-6 py-12 sm:py-16">
       <div className="mx-auto max-w-4xl">
         <div className="mb-6 text-center">
           <span className="text-xs font-semibold uppercase tracking-wider text-primary/60">

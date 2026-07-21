@@ -11,12 +11,12 @@ export default function Landing() {
   return (
     <main id="main-content">
       <Hero />
-      <CotizadorEmbed />
       <Problem />
       <Solution />
       <ManifestoQuote />
       <Benefits />
       <ServicePromise />
+      <CotizadorEmbed />
       <FinalCta />
     </main>
   )
