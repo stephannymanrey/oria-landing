@@ -3,11 +3,11 @@ import Reveal from './Reveal'
 const FAQS = [
   {
     q: '¿Necesito saber de logística para usar ORIA?',
-    a: 'No. ORIA está diseñado para que cualquier persona pueda usarlo sin tener experiencia en logística — si algo requiere un manual para entenderse, para nosotros eso ya es una falla de diseño.',
+    a: 'No, ORIA está diseñado para que cualquier persona pueda usarlo sin tener experiencia en logística. Si algo requiere un manual para entenderse, para nosotros eso ya es una falla de diseño.',
   },
   {
     q: '¿ORIA reemplaza a mi paquetería actual?',
-    a: 'No. No sustituimos, potenciamos. Te ayudamos a elegir la mejor opción, dar seguimiento y resolver incidencias — el envío sigue siendo tuyo, nosotros somos tu copiloto.',
+    a: 'No, no sustituimos, potenciamos. Te ayudamos a elegir la mejor opción, dar seguimiento y resolver incidencias. El envío sigue siendo tuyo, nosotros somos tu copiloto.',
   },
   {
     q: '¿Cuánto cuesta cotizar un envío?',
@@ -15,7 +15,7 @@ const FAQS = [
   },
   {
     q: '¿Qué pasa si algo sale mal con mi envío?',
-    a: 'Nunca te dejamos solo. Actuamos con rapidez y transparencia ante cualquier incidencia y te mantenemos informado durante todo el proceso. No prometemos que nunca habrá problemas — prometemos que siempre habrá alguien resolviendo contigo.',
+    a: 'Nunca te dejamos solo. Actuamos con rapidez y transparencia ante cualquier incidencia y te mantenemos informado durante todo el proceso. No prometemos que nunca habrá problemas, prometemos que siempre habrá alguien resolviendo contigo.',
   },
   {
     q: '¿Cómo empiezo a usar ORIA?',
